@@ -12,7 +12,9 @@ function Checkout() {
            <h4>Item Name</h4>
            <span>$ 18</span>
          </div>
-         <button type='button'>Delete</button>
+         <button type='button'>
+           <i className='fas fa-trash-alt' title='Delete Item'/>
+         </button>
        </div>
      </div>
      <div className="Checkout-sidebar">
