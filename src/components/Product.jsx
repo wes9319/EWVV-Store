@@ -1,15 +1,17 @@
 import React from 'react';
 
+const baseAPI = 'http://localhost:1337'
+
 const Product = ({ product, handleAddToCart }) => {
   const {
     image,
     title,
     price,
     description,
-  } = product;
+  } = product.attributes;
   return (
     <div className='Products-item'>
-      <img src={image} alt={title}/>
+      <img src={`${baseAPI}${image.data[0].attributes.url}`} alt={title}/>
       <div className="Product-item-info">
         <h2>
           {title}
